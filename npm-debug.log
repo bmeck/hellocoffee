@@ -1,0 +1,55 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
+info using npm@1.0.106
+info using node@v0.4.12
+verbose config file /home/bradley/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /home/bradley/Documents/nodejitsu/npm/npmrc
+silly testEngine { name: 'nodeapps-helloworld',
+silly testEngine   author: 
+silly testEngine    { name: 'Nodejitsu Inc.',
+silly testEngine      email: 'support@nodejitsu.com' },
+silly testEngine   version: '0.1.0',
+silly testEngine   scripts: { start: 'coffee ./bin/server' },
+silly testEngine   analyze: false,
+silly testEngine   _npmUser: 
+silly testEngine    { name: 'bradleymeck',
+silly testEngine      email: 'bradley.meck@gmail.com' },
+silly testEngine   _id: 'nodeapps-helloworld@0.1.0',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /home/bradley/Documents/nodejitsu/hellocoffee/package.json
+verbose loadDefaults nodeapps-helloworld@0.1.0
+verbose run-script [ 'prestart', 'start', 'poststart' ]
+info prestart nodeapps-helloworld@0.1.0
+info start nodeapps-helloworld@0.1.0
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "coffee ./bin/server"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'coffee ./bin/server' ],
+silly spawning   '/home/bradley/Documents/nodejitsu/hellocoffee' ]
+info nodeapps-helloworld@0.1.0 Failed to exec start script
+ERR! nodeapps-helloworld@0.1.0 start: `coffee ./bin/server`
+ERR! `sh "-c" "coffee ./bin/server"` failed with 1
+ERR! 
+ERR! Failed at the nodeapps-helloworld@0.1.0 start script.
+ERR! This is most likely a problem with the nodeapps-helloworld package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     coffee ./bin/server
+ERR! You can get their info via:
+ERR!     npm owner ls nodeapps-helloworld
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Linux 3.0.0-14-generic
+ERR! command "node" "/usr/local/bin/npm" "start"
+ERR! cwd /home/bradley/Documents/nodejitsu/hellocoffee
+ERR! node -v v0.4.12
+ERR! npm -v 1.0.106
+ERR! code ELIFECYCLE
+verbose exit [ 1, true ]
